@@ -10,6 +10,7 @@ sudo apt-get install ros-humble-sick-scan-xd
 ```
 
 Change the sick lidar ip address at `/opt/ros/humble/share/sick_scan_xd/launch/sick_tim_5xx.launch`
+
 Bring up with `ros2 launch f1tenth_stack bringup_launch_sick.py`
 
 See the [documentation of F1TENTH](https://f1tenth.readthedocs.io/en/foxy_test/getting_started/firmware/index.html) on how to get started.
