@@ -10,8 +10,9 @@ sudo apt-get install ros-humble-sick-scan-xd
 ```
 
 Change the sick lidar ip address at `/opt/ros/humble/share/sick_scan_xd/launch/sick_tim_5xx.launch`
+Bring up with `ros2 launch f1tenth_stack bringup_launch_sick.py`
 
-Drivers onboard f1tenth race cars. This branch is under development for migration to ROS2. See the [documentation of F1TENTH](https://f1tenth.readthedocs.io/en/foxy_test/getting_started/firmware/index.html) on how to get started.
+See the [documentation of F1TENTH](https://f1tenth.readthedocs.io/en/foxy_test/getting_started/firmware/index.html) on how to get started.
 
 ## Deadman's switch
 On Logitech F-710 joysticks, the LB button is the deadman's switch for teleop, and the RB button is the deadman's switch for navigation. You can also remap buttons. See how on the readthedocs documentation.
@@ -48,7 +49,7 @@ On Logitech F-710 joysticks, the LB button is the deadman's switch for teleop, a
 3. ackermann_to_vesc_node
 4. vesc_to_odom_node
 5. vesc_driver_node
-6. urg_node
+6. urg_node (for sick lidar it's sick_generic_caller)
 7. ackermann_mux
 
 ## Parameters and topics for dependencies
