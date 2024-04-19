@@ -1,6 +1,6 @@
 # f1tenth_system
 
-This repo is for ROS2 humble and add support for sick lidar.
+This repo is for ROS2 humble and adds support for sick lidar. Tested on Jetpack 6.0 DP.
 
 Run the following steps to install sick_scan_xd on Linux with ROS 2 humble:
 
